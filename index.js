@@ -10,6 +10,9 @@ app.use(express.static(__dirname + '/src/'));
 app.get('*',(req,res) => {
 	res.sendFile(path.join(__dirname + '/src/index.html'));
 });  
-app.listen(5000,function() {
-	console.log("server is running")
-})
+
+
+const port = process.env.PORT || 5000;
+app.listen(port, () => {
+	console.log("listen on port 5000")
+});
