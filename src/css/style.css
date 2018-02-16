@@ -13,7 +13,7 @@
   height: 450px; } 
 
 .carousel-image-1 {
-  background: url("../img/image1.jpg");
+  background: url("../img/carosal1.jpg");
   background-size: cover; }
 
 .carousel-image-2 {
@@ -29,7 +29,11 @@
 	font-size: 50px;
 }
 
-
+.imgSize {
+   height: 200px;
+   width: 100%;
+   margin: 1px;
+}
 #home-heading {
   position: relative;
   min-height: 200px;
@@ -89,3 +93,63 @@
   #faq.bg-dark .card-block, #faq.bg-dark .card-header {
     background: #333; }
 
+.sidenavbar {
+    
+}
+
+.active {
+    font-weight:bold;
+} 
+
+ul {
+    list-style: none; /* Remove list bullets */
+    padding: 0;
+    margin: 0;
+}
+.mobile {
+  padding:50px;
+}
+.ss1 {    
+  display: table;
+  table-layout: fixed;
+  word-wrap: break-word;
+  width: 100%;
+}
+ 
+.ss2 { 
+  display: table-cell; 
+}
+
+.padding_top {
+  padding-top: 8px;
+}
+ .mobile111 {
+  width:300px;
+  padding:0px; 
+}
+.wordwrap {
+  word-wrap: break-word;
+}
+
+@media (min-device-width : 320px) and (max-device-width : 480px) { 
+
+  .mobile {
+padding: 2px;
+  }
+
+.modal-dialog {
+   top:23% !important;
+}
+
+ .mobile111 {
+  width:130px !important;
+  padding-left: 5px;
+  font-size: 10px;
+}
+
+.mobileRight {
+  padding: 1px;
+}
+  }
+
+  

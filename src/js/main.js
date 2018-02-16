@@ -23,3 +23,28 @@ $('.slider').slick({
   slideToShow: 1,
   slideToScroll:1
 });
+
+$(document).ready(function () {
+    $('.sidenavbar ul li:first').addClass('active');
+    $('.tab-content:not(:first)').hide();
+    $('.sidenavbar ul li a').click(function (event) {
+        event.preventDefault();
+        var content = $(this).attr('href');
+        $(this).parent().addClass('active');
+        $(this).parent().siblings().removeClass('active');
+        $(content).show();
+        $(content).siblings('.tab-content').hide();
+    });
+});
+
+function myFunction(e,n) { 
+  console.log("email",e.value)
+  console.log("number",e);
+
+setTimeout(function() {
+  document.getElementById("myForm").reset();  
+  location.reload();
+},3000)
+  
+
+}
