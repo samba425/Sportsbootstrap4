@@ -7,21 +7,25 @@ module.exports = (router) => {
         var transporter = mail.createTransport({
             service: 'gmail',
             auth: {
-                user: 'asiva325@gmail.com',
-                pass: '9553386143'
+                user: 'sportslead2play@gmail.com',
+                pass: 'lead2play'
             }
         });
  
         let mailOptions = {
             from: req.body.email, // list of receivers
-            to: 'asiva325@gmail.com', // sender address 
+            to: 'sportslead2play@gmail.com', // sender address 
             subject: req.body.name, // Subject line 
             html: '<p>Email :'+req.body.email+',</n>LastName:'+req.body.lastname+',</n>Phone no:'+req.body.number+'</n>,Message:'+req.body.msg+'</p>'
         };
 
         transporter.sendMail(mailOptions, function(error, info) { 
-                console.log("successmail", sentinfo) 
-               
+              // if(error) {
+              //   console.log("error",error)
+              // } else {
+              //   console.log("success",info)
+              // }
+                
         });
     })
     return router;
